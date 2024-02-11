@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nm/index.html" afterDir="false" />
+    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="index file">
+      <change afterPath="$PROJECT_DIR$/nm/img/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm/img/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm/img/bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm/img/me1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm/img/me2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nm/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nm/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -26,6 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2cE6pLlBdvO3ekFAEm7Sv7Rqnap" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +46,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/illi-/OneDrive/Desktop/Portfolio",
+    "last_opened_file_path": "C:/Users/illi-/OneDrive/Desktop/Portfolio/nm/img",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,6 +56,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\illi-\OneDrive\Desktop\Portfolio\nm\img" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,11 +69,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707664573026</updated>
-      <workItem from="1707664574095" duration="1506000" />
+      <workItem from="1707664574095" duration="15883000" />
     </task>
+    <task id="LOCAL-00001" summary="index file">
+      <created>1707666499010</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707666499010</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="index file" />
+    <option name="LAST_COMMIT_MESSAGE" value="index file" />
   </component>
 </project>
