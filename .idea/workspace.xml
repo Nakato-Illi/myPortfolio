@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="header">
-      <change afterPath="$PROJECT_DIR$/nm/main.js" afterDir="false" />
+    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm/img/bg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/nm/img/bg2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TechInfo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TechInfo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nm/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nm/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/illi-/OneDrive/Desktop/Portfolio/nm&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/illi-/OneDrive/Desktop/Portfolio",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\illi-\OneDrive\Desktop\Portfolio\nm\img" />
@@ -89,6 +87,7 @@
       <workItem from="1707731113466" duration="5162000" />
       <workItem from="1707736349990" duration="1228000" />
       <workItem from="1707737987182" duration="31000" />
+      <workItem from="1707842908712" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="index file">
       <created>1707666499010</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707683740349</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="projects part 1">
+      <created>1707843015645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707843015645</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="index file" />
     <MESSAGE value="header" />
-    <option name="LAST_COMMIT_MESSAGE" value="header" />
+    <MESSAGE value="projects part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="projects part 1" />
   </component>
 </project>
