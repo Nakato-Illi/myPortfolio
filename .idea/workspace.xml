@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 2">
-      <change beforePath="$PROJECT_DIR$/nm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nm/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +85,7 @@
       <workItem from="1707737987182" duration="31000" />
       <workItem from="1707842908712" duration="1532000" />
       <workItem from="1707845655439" duration="91000" />
-      <workItem from="1707845779749" duration="386000" />
+      <workItem from="1707845779749" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="index file">
       <created>1707666499010</created>
@@ -131,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707845855845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="projects part 3">
+      <created>1707846596851</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707846596851</updated>
+    </task>
+    <task id="LOCAL-00008" summary="projects part 3">
+      <created>1707846623568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707846623568</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +154,7 @@
     <MESSAGE value="header" />
     <MESSAGE value="projects part 1" />
     <MESSAGE value="projects part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="projects part 2" />
+    <MESSAGE value="projects part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="projects part 3" />
   </component>
 </project>
