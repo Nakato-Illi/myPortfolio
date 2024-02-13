@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Lobster&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Shadows Into Light', cursive; */
+
+
+/*              Grundeinstellungen              */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: .02em;
+    /* Meine Variablen. */
+    --main-hue:20;
+    --dark: hsla(var(--main-hue), 80%, 50%, 1);
+    --top-family: 'Lobster', cursive;
+    ;
+    scroll-behavior: smooth;
+
+}
+
+
+
+/*              Navigation             */
+
+nav {
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 0%);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    height: 40px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 95%);
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    height: 40px;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--dark);
+    color: hsl(0, 0%, 0%);
+}
+
+.drop-down {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.drop-down li {
+    display: none;
+}
+
+nav ul li:hover .drop-down li {
+    display: block;
+}
+
+
+/*              Header             */
+
+header {
+    background-image: url(pic/dancehop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 40px);
+}
+
+header div {
+    display: grid;
+    height: 100%;
+}
+
+header div h1 {
+    justify-self: center;
+    align-self: center;
+    font-family: var(--top-family);
+    font-size: 2.5rem;
+    color: var(--dark);
+    text-shadow: 2px 2px 3px hsl(0, 0%, 0%);
+}
+
+header div h1 span {
+    display: block;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 7rem;
+}
+
+
+/*              Main            */
+
+main .saulen {
+    background-image: url(pic/saulen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.kontakt h2,
+.saulen h2 {
+    font-family: var(--top-family);
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+    text-shadow: 2px 2px 3px hsl(0, 0%, 0%);
+}
+
+main .kontakt {
+    background-image: url(pic/dj.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+    align-items: center;
+}
+
+
+/*              Saulen Section            */
+
+section {
+    margin: 5%;
+}
+
+#history h2 {
+    padding: 40px 0;
+}
+
+#dj,
+#graff,
+#bd,
+#rap {
+    padding-top: 40px;
+}
+
+.gridSaulen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". rap ."
+        "gr . dj"
+        ". bd ."
+    ;
+}
+
+.secimg img {
+    grid-area: secimg;
+}
+
+.rap {
+    grid-area: rap;
+}
+
+.graffiti {
+    grid-area: gr;
+    align-self: center;
+}
+
+.dj {
+    grid-area: dj;
+
+}
+
+.bdance {
+    grid-area: bd;
+}
+
+/*              Form  Section           */
+
+.formSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form {
+    padding: 0 5%;
+}
+
+.formtext {
+    width: 300px;
+}
+
+form fieldset {
+    margin-bottom: 3%;
+    width: 400px;
+    padding: 1%;
+}
+
+.legendP {
+    font-weight: bold;
+    padding:3%;
+}
+
+.fieldTree label {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.fieldTwo div {
+    display: flex;
+    flex-direction: row;
+}
+
+.fieldTwo div label {
+    width: 100px;
+}
+
+.fieldTwo div input{
+    width: 200px;
+    margin: 1%;
+}
+
+
+/* Wird durch js Erzeugt */
+.classTextFehler {
+    color: red;
+    margin-top: 5px;
+    padding: .5%;
+}
+
+#passwort {
+    min-width: 200px;
+}
+
+.but {
+    padding: 2%;
+}
+
+
+/*              Footer            */
+
+footer {
+    height: 20vh;
+    background-color: var(--dark);
+}
+
+/*              durch js            */
+
+.classTextBild {
+    width: 100px;
+}
+
+/*              Responsive         */
+
+@media screen and (max-width: 60em) {
+    :root {
+        --mainColmedia: hsla(190, 100%, 7%, 1);
+    }
+
+    /* BODY */
+
+    body {
+        background-color: var(--mainColmedia);
+    }
+
+    /* NAV */
+    nav ul li {
+        background-color: hsla(var(--main-hue), 70%, 10%, 1);
+        /* für den kleinen viewport untereinander  */
+        flex: 1 1 0em;
+    }
+
+
+    /* HEADER */
+    header {
+        min-height: 400px;
+        height: 50vh;
+    }
+
+    header div h1 {
+        font-size: 1.8rem;
+    }
+
+    header div h1 span {
+        font-size: 4rem;
+    }
+
+    /* MAIN */
+    main {
+        margin: 0;
+        color: hsla(var(--main-hue), 100%, 100%, 1);
+    }
+
+    main .kontakt,
+    main .saulen {
+        height: 20vh;
+    }
+    
+    .kontakt h2,
+    .saulen h2 {
+        font-size: 1.5rem;
+    }
+
+    /* SECTION*/
+
+    section {
+        margin: 7%;
+    }
+    
+    .gridSaulen {
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "rap"
+            "dj"
+            "gr"
+            "bd"
+        ;
+    }
+
+    .graffiti,
+    .dj,
+    .rap {
+        border-bottom: var(--dark) solid 2px;
+        padding: 5%;
+    }
+    
+    .bdance {
+        border-top: var(--dark) solid 1px;
+        padding: 5%;
+    }
+
+    .formSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formtext {
+        width: 90vw;
+        margin-bottom: 3%;
+    }
+    
+    fieldset {
+        margin: 2%;
+    }
+    
+    .but {
+        height: 30px;
+        width: 100px;
+    }
+
+    form fieldset {
+        width: 300px;
+    }
+
+    .fieldTwo div input{
+        width: 150px;
+    }
+    
+
+    
+}

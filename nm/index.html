@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="mediaq.css">
 </head>
 <body>
-<aside>
-    <img class="profile-img" src="img/me2.jpg" alt="profile image">
+<aside class="aside-container">
+    <a href="img/me1.jpg"><img class="profile-img" src="img/me2.jpg" alt="profile image"></a>
     <h1>Nakato Musisi</h1>
     <p><span class="small-text">Angehende </span> <br> Software Programmiererin</p>
-<!--    <p><span class="small-text">Abschlusssemester </span> <br> Berliner Hochschule für Technik</p>-->
+    <!--    <p><span class="small-text">Abschlusssemester </span> <br> Berliner Hochschule für Technik</p>-->
     <div class="aside-btn">
         <div>
             <a>Lebenslauf</a>
-            <a>Motivationsschreiben</a>
         </div>
 
         <div>
@@ -45,20 +44,19 @@
                 <a href="#">Erfahrungen</a>
                 <a href="#">Projekte</a>
                 <a href="#">Kontakt</a>
-                <button class="en-de" type="submit">EN</button>
+                <span class="en-de"><a href="img/me1.jpg">EN</a></span>
             </div>
         </div>
     </nav>
 
     <div class="aside-min">
-        <img class="min-img" src="img/me2.jpg" alt="profile image">
+        <a href="img/me1.jpg"><img class="min-img" src="img/me2.jpg" alt="profile image"></a>
         <div class="aside-min-text">
             <h1>Nakato Musisi</h1>
             <p><span class="small-text">Angehende </span> <br> Software Programmiererin</p>
             <div class="aside-btn">
                 <div>
                     <a>Lebenslauf</a>
-                    <a>Motivationsschreiben</a>
                 </div>
                 <div class="dl-icon">
                     <a>Discord</a>
@@ -69,13 +67,68 @@
     </div>
 
     <header>
-        <h2>Über Mich</h2>
-        <div class="header-text">
-            <p>
-
-            </p>
+        <div class="header-container">
+            <div class="header-text">
+                <h2>Über Mich</h2>
+                <div class="h-text">
+                    <p>
+                        Studentin im Abschlusssemester der Medieninformatik an der Berliner Hochschule für Technik (BHT)
+                        mit dem Ziel, das im Studium erworbene Wissen in der Softwareprogrammierung im Bereich der
+                        Frontend- und Backendentwicklung anzuwenden und zu erweitern.
+                    </p>
+                </div>
+            </div>
         </div>
     </header>
+
+    <section class="experience">
+        <h2>Grundkenntnisse in:</h2>
+        <div class="exp-text">
+            <div>
+                <p class="experience-h">Java</p>
+                <ul>
+                    <li>JavaFX</li>
+                </ul>
+            </div>
+            <div>
+                <p class="experience-h">JavaScript</p>
+                <ul>
+                    <li>NodeJS</li>
+                    <li>Typescript</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div>
+                <p class="experience-h">PHP</p>
+                <ul>
+                    <li>Laravel</li>
+                </ul>
+            </div>
+            <div>
+                <p class="experience-h">Python</p>
+                <ul>
+                    <li>PyGame</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projekte">
+        <h2>Projekte</h2>
+        <div class="projekt-cat">
+            <h3>Java</h3>
+        </div>
+        <div class="projekt-cat">
+            <h3>JS</h3>
+        </div>
+        <div class="projekt-cat">
+            <h3>PHP</h3>
+        </div>
+        <div class="projekt-cat">
+            <h3>Python</h3>
+        </div>
+    </section>
 </main>
 </body>
 </html>

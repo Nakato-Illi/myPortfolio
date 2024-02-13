@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekte Home</title>
+  <link rel="stylesheet" href="css/dea.css">
+
+</head>
+
+<body>
+  <nav class="deaSim-nav">
+    <a href="index.html" class="logo">Tec/info</a>
+    <h2 class="rg_h2">Reber Grammer Simulator</h2>
+    <ul class="nav_conatiner">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#dea_aufgabe">Technik & Fachlich</a></li>
+    </ul>
+
+  </nav>
+
+  <main class="deaSim_main">
+
+    <div class="textmainlinks">
+
+      <p class="rgParameter">
+        5-Tupel RG = (Q, &sum;, &part;, S, F) <br>
+        
+        <span class="dropdown">
+          <button class="dropbtn">Q</button>
+          <span class="dropdown-content">
+            <span>Q ist die Zustandsmenge</span>
+          </span>
+        </span>
+        
+         = { q0, q1, q2, q3, q4, q5, q6, q7 } <br>
+
+         <span class="dropdown">
+          <button class="dropbtn">&sum;</button>
+          <span class="dropdown-content">
+            <span>&sum; ist das Eingabealphabet</span>
+          </span>
+        </span>
+
+         = <span id="eingabe"></span> <br>
+         
+         <span class="dropdown">
+          <button class="dropbtn">S</button>
+          <span class="dropdown-content">
+            <span>S steht für den Startzustand</span>
+          </span>
+        </span>
+        = q0
+        <br>
+        
+        <span class="dropdown">
+          <button class="dropbtn">F</button>
+          <span class="dropdown-content">
+            <span>F steht für die Menge der Endzustände</span>
+          </span>
+        </span>
+         = { q7 }
+        <br>
+
+        <span class="dropdown">
+          <button class="dropbtn">&part;</button>
+          <span class="dropdown-content">
+            <span>&part; beschreibt die Zustandsüberführungsfunktion</span>
+          </span>
+        </span>
+        : Q x &sum; &#8594; Q
+      </p>
+
+      <table class="dea_table_container">
+
+        <thead>
+          <tr>
+            <th>Q</th>
+            <th>&sum;</th>
+            <th>Q</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+      </table>
+
+     
+
+    </div>
+
+
+
+    <div class="conatiner_gr">
+
+
+      <!-- Graphen mit ansprechbaren Parts in SVG  -->
+      <svg  viewBox="0 0 170 100">
+
+
+        <!-- Hintergrund als Orientierung -->
+        <path class="bg-grid" d="M10 0 V100" />
+        <path class="bg-grid" d="M20 0 V100" />
+        <path class="bg-grid" d="M30 0 V100" />
+        <path class="bg-grid" d="M40 0 V100" />
+        <path class="bg-grid" d="M50 0 V100" />
+        <path class="bg-grid" d="M60 0 V100" />
+        <path class="bg-grid" d="M70 0 V100" />
+        <path class="bg-grid" d="M80 0 V100" />
+        <path class="bg-grid" d="M90 0 V100" />
+        <path class="bg-grid" d="M100 0 V100" />
+        <path class="bg-grid" d="M110 0 V100" />
+        <path class="bg-grid" d="M120 0 V100" />
+        <path class="bg-grid" d="M130 0 V100" />
+        <path class="bg-grid" d="M140 0 V100" />
+        <path class="bg-grid" d="M150 0 V100" />
+        <path class="bg-grid" d="M160 0 V100" />
+
+        <path class="bg-grid" d="M0 10 H170" />
+        <path class="bg-grid" d="M0 20 H170" />
+        <path class="bg-grid" d="M0 30 H170" />
+        <path class="bg-grid" d="M0 40 H170" />
+        <path class="bg-grid" d="M0 50 H170" />
+        <path class="bg-grid" d="M0 60 H170" />
+        <path class="bg-grid" d="M0 70 H170" />
+        <path class="bg-grid" d="M0 80 H170" />
+        <path class="bg-grid" d="M0 90 H170" />
+
+        <!-- Arrow gebogen für die Kanten die im Selben Zusatnd Enden  -->
+        <path id="arrow2-2" class="arrow-circle" stroke="green" d="M53 21 A6 6, 0, 1 1, 57 18"></path>
+        <path id="arrowhead2-2" class="arrow-circle" stroke="green" d="M53 19 v4 l2 -2 z" />
+        <path id="arrow3-3" class="arrow-circle" stroke="green" d="M53 81 A6 6, 0, 1 0, 57 82"></path>
+        <path id="arrowhead3-3" class="arrow-circle" stroke="green" d="M53 79 v4 l2 -2 z" />
+
+        <!-- KNOTEN  -->
+        <circle id="node0" class="knoten-body" cx="10" cy="50" r="5" />
+        <circle id="node1" class="knoten-body" cx="40" cy="50" r="5" />
+
+        <circle id="node2" class="knoten-body" cx="60" cy="20" r="5" />
+        <circle id="node3" class="knoten-body" cx="60" cy="80" r="5" />
+        <circle id="node4" class="knoten-body" cx="110" cy="20" r="5" />
+        <circle id="node5" class="knoten-body" cx="110" cy="80" r="5" />
+
+        <circle id="node7" class="knoten-body" cx="160" cy="50" r="5" />
+        <circle id="node6" class="knoten-body" cx="130" cy="50" r="5" />
+
+
+        <!-- KANTEN  -->
+        <marker id="arrow0-1" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+          markerUnits="strokeWidth">
+          <path d="M0,0 L0,4 L3,2 z" />
+        </marker>
+        <line id="arrow_0-1" class="kanten-body" stroke="green" x1="15" y1="50" x2="33.2" y2="50"
+          marker-end="url(#arrow0-1)" />
+
+        <marker id="arrow1-2" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+          markerUnits="strokeWidth">
+          <path d="M0,0 L0,4 L3,2 z"  />
+          </marker>
+          <line id="arrow_1-2" class="kanten-body" stroke="green" x1="43" y1="46" x2="56" y2="26"
+            marker-end="url(#arrow1-2)" />
+
+          <marker id="arrow1-3" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+            markerUnits="strokeWidth">
+            <path d="M0,0 L0,4 L3,2 z"  />
+          </marker>
+          <line id="arrow_1-3" class="kanten-body" stroke="green" x1="43" y1="54" x2="55" y2="75"
+              marker-end="url(#arrow1-3)" />
+
+            <marker id="arrow2-4" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+              markerUnits="strokeWidth">
+              <path d="M0,0 L0,4 L3,2 z"  />
+          </marker>
+          <line id="arrow_2-4" class="kanten-body" stroke="green" x1="65" y1="20" x2="103" y2="20"
+                marker-end="url(#arrow2-4)" />
+
+              <marker id="arrow3-5" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+                markerUnits="strokeWidth">
+                <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_3-5" class="kanten-body" stroke="green" x1="65" y1="80" x2="103" y2="80"
+                  marker-end="url(#arrow3-5)" />
+
+                <marker id="arrow4-3" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2" orient="auto"
+                  markerUnits="strokeWidth">
+                  <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_4-3" class="kanten-body" stroke="green" x1="107" y1="24" x2="65" y2="75"
+                    marker-end="url(#arrow4-3)" />
+
+                  <marker id="arrow4-6" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2"
+                    orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_4-6" class="kanten-body" stroke="green" x1="113" y1="24" x2="126" y2="44"
+                      marker-end="url(#arrow4-6)" />
+
+                    <marker id="arrow5-4" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2"
+                      orient="auto" markerUnits="strokeWidth">
+                      <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_5-4" class="kanten-body" stroke="green" x1="110" y1="75" x2="110" y2="27"
+                        marker-end="url(#arrow5-4)" />
+
+                      <marker id="arrow5-6" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2"
+                        orient="auto" markerUnits="strokeWidth">
+                        <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_5-6" class="kanten-body" stroke="green" x1="113" y1="76" x2="125.5" y2="55.5"
+                          marker-end="url(#arrow5-6)" />
+
+                        <marker id="arrow6-7" stroke="green" markerWidth="10" markerHeight="10" refX="0" refY="2"
+                          orient="auto" markerUnits="strokeWidth">
+                          <path d="M0,0 L0,4 L3,2 z" />
+          </marker>
+          <line id="arrow_6-7" class="kanten-body" stroke="green" x1="135" y1="50" x2="153" y2="50"
+                            marker-end="url(#arrow6-7)" />
+
+                          <!-- KNOTEN-BEZEICHNUNG  -->
+                          <text class="knoten-text" x="07" y="51"> q0 </text>
+                          <text class="knoten-text" x="37" y="51"> q1 </text>
+                          <text class="knoten-text" x="57" y="21"> q2 </text>
+                          <text class="knoten-text" x="57" y="81"> q3 </text>
+                          <text class="knoten-text" x="107" y="21"> q4 </text>
+                          <text class="knoten-text" x="107" y="81"> q5 </text>
+                          <text class="knoten-text" x="127" y="51"> q6 </text>
+                          <text class="knoten-text" x="157" y="51"> q7 </text>
+
+                          <!-- KANTEN-BEZEICHNUNG  -->
+                          <text id="letter0-1" class="kanten-text" x="23" y="48"> B </text>
+                          <text id="letter1-2" class="kanten-text" x="45" y="35"> T </text>
+                          <text id="letter4-3" class="kanten-text" x="82" y="48"> X </text>
+                          <text id="letter1-3" class="kanten-text" x="43" y="68"> P </text>
+                          <text id="letter5-4" class="kanten-text" x="105" y="52"> P </text>
+                          <text id="letter2-4" class="kanten-text" x="83" y="19"> X </text>
+                          <text id="letter3-5" class="kanten-text" x="83" y="85"> V </text>
+                          <text id="letter4-6" class="kanten-text" x="123" y="34"> S </text>
+                          <text id="letter5-6" class="kanten-text" x="123" y="69"> V </text>
+                          <text id="letter6-7" class="kanten-text" x="143" y="48"> E </text>
+
+                          <text id="letter2-2" class="kanten-text" x="45" y="10"> S </text>
+                          <text id="letter3-3" class="kanten-text" x="45" y="93"> T </text>
+
+      </svg>
+
+      
+
+    </div>
+
+
+    <div class="container_function">
+
+
+      <div>
+        <label for="gen_but">
+          Zufallswort generieren:
+        </label>
+        <div class="gen_but_zufall">
+          <button id="gen_but_corr" onclick="generateRandomRightWord()">Korrektes Wort</button>
+          <button id="gen_but_wrong" onclick="generateRandomWrongWord()">Falsches Wort</button>
+          
+        </div>
+      </div>
+
+
+      <div class="zeichenketten">
+        
+
+        <form onsubmit="return false">
+          <label for="fname">Zeichenkette eingeben:</label>
+            <input background type="text|submit" id="word_input" name="fname" oninput="value = value.toUpperCase()"></input>
+            <button id="isCorrekt" onclick="inputReady()">OK</button>
+
+        </form>
+
+        <span type="text" >Wort ist: </span> <span type="text" id="result_bool"></span>
+      <!-- <div id="text_box"> -->
+        <span class="wortFeld" type="text" id="gen_tex">Prüfungsfeld</span>
+        <!-- <input class="wortFeld2" type="text" id="in_gen_tex" oninput="value = value.toUpperCase()"></input>  
+        <button id="edit_ok" onclick="editWord(false)">OK</button>
+      </div> -->
+      <button id="wortandern" onclick="editWord()">Eingabe bearbeiten</button>
+      
+      </div>
+
+      <div class="container_control">
+        
+        <button id="start" onclick="checkWord(true)">Start / Wiederholung</button>
+        <button id="stop" onclick="pause()">Stop</button>
+        <button   id="step"onclick="checkWord(false)">Schrittweise</button>
+        <button onClick="history.go(0);">Zurücksetzen</button>
+    
+        <div class="slidecontainer">
+          <p>Geschwindigkeit</p>
+          <input type="range" min="1" max="100" value="80" class="slider" id="myRange" oninput="setSpeed(value)">
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+
+
+  <script src="js/dea.js"></script>
+</body>
+
+</html>

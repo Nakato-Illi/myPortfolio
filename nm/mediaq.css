@@ -45,12 +45,13 @@
     .nav > .nav-links > a {
         display: block;
         width: 100%;
+        text-align: end;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0;
     }
     .nav > #nav-check:checked ~ .nav-links {
-        height: calc(60vh - 70px);
+        height: calc(35vh - 70px);
         overflow-y: auto;
         z-index: 20;
     }
@@ -60,7 +61,14 @@
     }
 
     header {
-        height: 80vh; /* Adjusting the header height */
+        height: 50vh;
+        margin-bottom: 10%;
+    }
+
+    .en-de {
+        position: fixed;
+        top: 20px;
+        right: 70px;
     }
 
 }

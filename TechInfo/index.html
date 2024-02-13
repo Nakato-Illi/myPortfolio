@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekte Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <p href="" class="logo">Tec/info</p>
+
+        <ul class="menu">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#pro1-4">Projektübersicht</a></li>
+            <li><a href="#">Dea</a>
+                <ul class="drop_dea">
+                    <li><a href="#dea_aufgabe">Aufgabe</a></li>
+                    <li><a href="Dea-Simulator.html">Simulator</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Grammatik</a>
+                <ul class="drop_dea">
+                    <li><a href="#grammatik_aufgabe">Aufgabe</a></li>
+                    <li><a href="Grammatik.html">Simulator</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Kellerautomat</a>
+                <ul class="drop_dea">
+                    <li><a href="#ka_aufgabe">Aufgabe</a></li>
+                    <li><a href="KellerA.html">Simulator</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">TM</a>
+                <ul class="drop_dea">
+                    <li><a href="#tm_aufgabe">Aufgabe</a></li>
+                    <li><a href="TM-Simulator.html">Simulator</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <header>
+
+        <div class="hero_left">
+
+            <h1>Technische Informatik</h1>
+            <p>Projektaufgaben</p>
+            <h2>Nakato Musisi</h2>
+            <p>Beuth Hochschule für Technik Berlin<sub>2021</sub></sub></p>
+
+        </div>
+
+        <div class="hero_right">
+            <p>
+                Funktion dieser Website ist es die Projekte des Moduls Technische Informatik der Beuth Hochschule für
+                Technik Berlin zu präsentieren.
+                Dies dient dazu, neben den Kursunterlagen, das gelernte praktisch anzuwenden und zu sehen wie es in der
+                praxis funktioniert.
+                Die Projekte werden unter der Leitung von Prof. Dr. Felix Gers der Beuth Hochschule bearbeitet.
+            </p>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="pro1-4" id="pro1-4">
+
+            <div class="pro1">
+                <p class="proP">Projektaufgabe P1: DEA</p>
+                <p>
+                    Abgabe: Montag, 10. Mai 2021, 80:00Uhr
+                </p>
+                <a href="#dea_aufgabe">Aufgabe</a>
+                <a href="Dea-Simulator.html">Simulator</a>
+            </div>
+
+            <div class="pro2">
+                <p class="proP">Projektaufgabe P2: Grammatik</p>
+                <p>
+                    Abgabe: Montag, 31. Mai 2021, 80:00Uhr
+                </p>
+                <a href="#grammatik_aufgabe">Aufgabenstellung</a>
+                <a href="Grammatik.html">Simulator</a>
+            </div>
+
+            <div class="pro3">
+                <p class="proP">Projektaufgabe P3: Kellerautomat</p>
+                <p>
+                    Abgabe: Montag, 21. Juni 2021, 80:00Uhr
+                </p>
+                <a href="#ka_aufgabe">Aufgabenstellung</a>
+                <a href="KellerA.html">Simulator</a>
+            </div>
+
+            <div class="pro4">
+                <p class="proP">Projektaufgabe P4: TM</p>
+                <p>
+                    Abgabe: Montag, 12. Juli 2021, 80:00Uhr
+                </p>
+                <a href="#tm_aufgabe">Aufgabenstellung</a>
+                <a href="TM-Simulator.html">Simulator</a>
+            </div>
+
+        </div>
+
+        <div id="dea_aufgabe"></div>
+
+        <div class="deaContainer">
+            <h2>DEA - deterministisch endlicher Automat</h2>
+
+            <div class="dea_textcontainer">
+                <div class="dealeft">
+                    <h3>Was ist ein DEA</h3>
+                    <p>Ein 5-Tupel E = (Q,Σ, δ, q0, F) heißt deterministischer endlicher Automat (DEA)
+                        oder kurz endlicher Automat, falls gilt:<br>
+                        Q ist eine endliche nicht-leere Menge, die Zustandsmenge<br>
+                        Σ ist ein Alphabet, das Eingabealphabet<br>
+                        q0 ∈ Q ist der Startzustand<br>
+                        F ⊆ Q ist die Menge der Endzust¨ande oder der akzeptierenden Zust¨ande<br>
+                        <br>
+                    </p>
+                    <p>Deas sind Automaten, f&uuml;r die zu einem Paar aus Eingabezeichen und Zustand
+                        genau ein Folgezustand definiert ist.
+                        Die &Uuml;berf&uuml;hrungsfunktion δ /
+                        δ : Q × Σ → Q beschreibt die Zustands&uuml;berf&uuml;hrungsfunktion<br>
+                    </p>
+                    <br>
+                    <h3>Aufgabenstellung</h3>
+                    <p>
+                        Simulation des Reber Grammar (RG) als Dterministisch Endlichen Automaten.
+                        Stellen Sie den DEA als Tabelle und als Graph da. Die Verarbeitung der
+                        Eingabe wird schrittweise angezeigt. Schließlich wird das Endzustand und
+                        das Ergebnis (erkannt oder nicht erkannt) des Automaten dargestellt.
+                    </p>
+                </div>
+
+                <div class="dea_center">
+                    <h3>Technische Umsetzung</h3>
+                    <p>
+                        Das Layout der Simulationsseite ist mit CSS3 und HTML5 entwickelt worden.<br>
+                        Der Graph wurde mit SVG in der Dea-HTML-Seite erstellt. Die Funktionalitäten der Knoten und
+                        Kanten sind durch (JavaScript)Js hinzugefügt worden. Bis auf die den Tabellenkopf wurde die
+                        Tabelle Zur
+                        parallelen Darstellung des Graphen im Js erstellt.
+                        Mit Js werden auf die Buttons, das SVG, die Inputfelder, das Prüffeld und den
+                        Geschwindigkeitsregler in der Dea-HTML-Seite zugegriffen.
+                    </p>
+                </div>
+
+                <div class="dea_right">
+                    <h3>Fachliche Umsetzung</h3>
+                    <p>
+                    <h4> BUTTON - Wörter generieren:</h4>
+                    Vom SVG-Graphen ausgehend werden richtige Pfade erstellt. Start- und Endeknoten
+                    werden fest makirt. Mit einer For loop wird, durch die zuvor im SVG makierten Knoten und Kanten des
+                    Graphen iteriert. Die Funtion "getNextPossible(previous, kanten)" ist kern der Prüfung.
+                    Sie greift auf die zu verfügung stehenden Kanten zu und mit random() wird eine ausgewählt.
+                    Bei einem falschen Wort steht zwar die makierte Startkante, jeoch werden, mit einer definierten
+                    mindest und Maximallänge der Wörter,zufällig Buchtsaben mit der Funktion "
+                    generateRandomWrongWord()" aus den Alphabet genommen. Sollte zufällig doch ein richtiges Wort
+                    generiert
+                    werden, so wird dies aufgefangen und die funktion wiederholt.
+                    </p>
+                    <p>
+                    <h4>Eingabezeichenkette Prüfen</h4>
+                    Auch hier wird die Funktion "getNextPossible()" verwendet. in der Funktion "isLetterCorrect" wird
+                    die Eingabe
+                    im HTML-Textfeld Buchtsaben nach Buchstabe abgearbeitet. Wenn ein Buchstabe (ausgehend vom
+                    Startknoten) eine nachvolgende
+                    Kante hat, wird diese zurückgegeben - zum erneuten prüfen - und gleichzeitig mit der Funktion
+                    "setColor"
+                    grün gefärbt. Sollte ein Buchstabe vorkommen der keine Nachfolgekante hat, so wird er nur eingefärbt
+                    und die Iteration wird unterbrochen.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="grammatik_aufgabe"></div>
+
+        <div class="grContainer">
+            <h2>Grammatik</h2>
+
+            <div class="gr_textcontainer">
+                <div class="gr_left">
+                    <h3>Was ist eine Grammatik</h3>
+                    <p>Ein 4-Tupel (V,Σ,R, S) heißt heißt (kontextfreie) Grammatik falls gilt:<br>
+                        V ist eine endliche, nichtleere Menge von Variablen bzw. Nichtterminalzeichen,<br>
+                        Σ ist ein Alphabet von Terminalszeichen, V ∩Σ = ∅,<br>
+                        R = {A → w | A ∈ V, w ∈ (V ∪ Σ)∗} ist eine endliche Menge von Regeln
+                        oder Produktionen,<br>
+                        S ∈ V ist die Startvariable.<br>
+                        <br>
+                        Charakteristisch für die kontextfreien Produktionen ist, dass die linke Seite aus
+                        genau einem Nichtterminalzeichen und die rechte Seite aus einem Wort ¨uber den
+                        Terminal- oder Nichtterminalzeichen der Grammatik besteht.
+                    </p>
+                    <h3>Aufgabenstellung</h3>
+                    <p>
+                        Erzeugung von zufälligen arithmetischen Ausdr&uuml;cken mithilfe einer Grammatik.
+                        Die Generierung der Ausdrücke mittels der Grammatik wird schrittweise angezeigt.
+                        Dabei soll ersichtlich sein welche Regel angewandt wird.
+                    </p>
+
+                </div>
+
+                <div class="gr_center">
+                    <h3>Technische Umsetzung</h3>
+                    <p>
+                        Das Layout der Grammatikseite ist mit CSS3 und HTML5 entwickelt worden.<br>
+                        Das main-Layout ist mit Grid erstellt worden. Die Einzelnen Eelemente der Sektionen wurden
+                        mit der Felxbox arrangiert.
+                        Die Funktionalitäten der Buttons, des Eingabefeld und der Überführungsregeln wurden mit
+                        js erzeugt.
+                    </p>
+                    <h3>Fachliche Umsetzung</h3>
+                    <p>
+                    <h4> BUTTON - Ausdrücke generieren:</h4>
+                    <strong> Falscher Ausdruck:</strong> wird durch die Funktion "getFalschAusdruck(ex)" erzeugt.
+                    Der falsche Ausdruck wird durch eine Liste erzeugt, die AOA, (A), Z und O enthält
+                    und mit der Funktion "getRandomNumber()" zufällige Zeichenketten generiert.
+                    Die Listenelemente werden dazu einfach aneinander gereiht.
+                    Am Ende werden alle As durch Zs ersetzt. In der Funktion "generateRandomWrongExpr()" wird abgefangen
+                    ob zufällig ein richtiges Wort generiert worden ist. Zuden werden die Os und Zs ersetzt.
+                    <br>
+                    <br>
+                    <strong>Richtiger Ausdruck:</strong> wird durch die Funktion "getRichtigAusdruck(ex)" erzeugt.
+                    Diesmal
+                    greifen wir auf eine Liste zu, die nur AOA und Z erhält. (A) wird extra abgefragt, damit man keine
+                    Ausdrücke mit Klammern in Klammern erzeugt. Nun verwenden wir eine For-Loop, die durch
+                    "max"-maximale Iterationsdurchläufe begrenzt ist. Die Funktion sucht beim existierenden
+                    Expression nach dem ersten A und ersetzt das erste A durch einen Korrekten Ausdruck in der Liste.
+                    Am Ende weden alle As durch Zs ersetzt.
+                    In der function "generateRandomRightWord()" werden dann alle Zs und 0s, im richtig generierten
+                    Ausdruck, durch Zahlen und Operanden ersetzt.
+                    </p>
+                </div>
+
+                <div class="gr_right">
+                    <p>
+                    <h4>Eingabe</h4>
+                    Die Funktion "isExpCorrect(e)" arbeitet ähnlich wie auch die Buttons. Der Unterschied ist, dass der
+                    zu untersuchende Ausdruck durch die Variable "gen.Exp" aus dem Inputfeld der HTMLdatei genommen
+                    wird.
+                    Zuerst werden alle Zahlen durch Zs ersetzt "exp = exp.replace(/\d/g, 'Z');", danach werden [+,-,*,/]
+                    durch
+                    Os ersetzt "exp = exp.replace(/[+ \- / *]/g, 'O');", danach werden Zs durch As ersetzt und das
+                    Prüfen
+                    kann los gehen. Mit der Funktion "isOrderCorrect" wird der zu prüfende Ausdruck mit einer Liste
+                    verglichen, in der alle falschen Anordungsmöglichkeiten drin sind. Z.b. (), Z(, OO oder ZZ etc.
+                    Sollte ein
+                    falscher Ausdruck enthalten sein, so wird sein Index gepseichert um den Ausdruck rot einzufärben.
+                    Falls keine falschen Ausdrücke vorliegen, so werden zwei IFs geprüft. Ist der Ausdruck kleiner als 3
+                    Zeichen lang,
+                    so wird der Ausdruck als Startpunkt makiert und zurückgegeben.
+                    Ist der Ausdruck größer als 3 so wird er Schritt für Schritt auf (A) oder AOA untersucht
+                    welche jeweils durch ein A ersetzt werde. Alle Zwischenschritte bis zum Finden des Startpunkts
+                    werden gespeichert.
+                    </p>
+                    <p>
+                    <h4>Animation</h4>
+                    Die Idee der Animation ist es, die durch die Funktion "isExpCorrect" enstandenen Ausdrücke und
+                    steps verkehrtrum abzuspielen.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="ka_aufgabe"></div>
+
+        <div class="ka_Container">
+            <h2>Kellerautomat</h2>
+
+            <div class="ka_textcontainer">
+                <div class="ka_left">
+                    <h3>Was ist ein Kellerautomat</h3>
+                    <p>Ein Kellerautomat (KA) ist ein 6-Tupel (Q,Σ, Γ, δ, q0, F) mit:</p>
+                    <p><strong>Q</strong> ist eine nichtleere, endlich Zustandsmenge,
+                        <strong>&sum;</strong> ist das Eingabealphabet,
+                        Γ ist das Kelleralphabet,
+                        δ : Q ×&sum;<sub>&epsilon;</sub>× Γ<sub>&epsilon;</sub>→P(Q × Γ<sub>&epsilon;</sub>) ist die
+                        ¨Uberf¨uhrungsfunktion,
+                        <strong>qo</strong> ∈ Q ist der Startzustand, und
+                        <strong>F ⊆ Q</strong> ist die Menge von End- bzw. akzeptierenden Zust¨anden.
+                    </p>
+                    <br>
+                    <p>Ein Kellerautomat arbeitet nun wie ein endlicher Automat, nur dass bei seinen
+                        ¨Uberf¨uhrungen der Keller zu ber¨ucksichtigen ist.</p>
+                    <br>
+                    <h3>Aufgabenstellung</h3>
+                    <p>
+                        Erzeugen Sie mit Hilfe der Grammatik aus Aufgabe P2 einen zufälligen arithmetische Ausdruck.
+                        Die Grammar in P2 hat die Vorgaben: <br>
+                        einstelligen natürlichen Zahlen mit den Operanden "+,-,*,/" und beliebig geschachtelten
+                        runden Klammeren, z.B.: 2*(3*(4+7)-9) oder 9+2 oder
+                        (3) oder nur 7 sind gültig, ungültig sind 12 oder () oder (+3) oder -1.
+                    </p>
+                </div>
+
+                <div class="ka_center">
+                    <h3>Technische Umsetzung</h3>
+                    <p>
+                        Das Layout der Kellerautomaten-Seite ist mit CSS und HTML5 entwickelt worden.<br>
+                        Die Einzelnen Eelemente wurden mit der Felxbox arrangiert.
+                        Die Funktionalitäten der Buttons, des Eingabefeld und der Überführungsregeln wurden mit
+                        js erzeugt.
+                    </p>
+                </div>
+
+                <div class="ka_right">
+                    <h3>Fachliche Umsetzung</h3>
+                    <p>Funktion <strong>„checkWord“</strong> managet Autoplay und schrittweise. In ihr werden alle
+                        Funktionen gebündelt.
+                        Die Prüfung des Wortes ist aufgeteilt in zwei Funktionen. Check(); und test();
+                        Eine für richtige Ausdrücke und eine für falsche Ausdrücke.
+                        Richtige Ausdrücke lassen sich wie im verlinkten Video (video: von Gramma zum Keller) leicht
+                        abarbeiten, da dort die Entstehungsschritte bekannt sind. Beim falschen Wort gibt es jedoch
+                        keine Entstehungsschritte.
+                    </p>
+                    <br>
+                    <h4>Funktion für richtige Ausdrücke: check();</h4>
+                    <p>Wir haben zwei wichtige Konstanten.
+                        con = false (für continue) und suc = false (für sucsses )<br>
+                        <br>
+                        Im ersten Schritt, beim noch leeren keller.length === 0, initialisieren wir das „word“ mit der
+                        Eingabe im Eingabefeld.
+                        Dabei steht „word“ für die Eingabe und „w“ steht für das Wort unter dem Eingabefeld, dass wir
+                        abarbeiten.
+                        Im Keller pushen wir „$“ rein.<br>
+                        Beim Nächster durchlauf der Funktion ist die keller.length === 1, durch das $. Hier wird ein Z
+                        in den Keller gelegt, sollte das abzuarbeitende wort w nicht die länge 0 haben.<br>
+                        <br>
+
+                        Ab Zeile 308 beginnt die tatsächliche Prüfung des Wortes durch den Keller.
+                        Dazu haben wir die Variablen: <br>
+                        f = w[0]; - speichert den ersten Buchstaben des Wortes das wir abarbeiten<br>
+                        f2 = w[1]; - speichert den zweiten Buchstaben des Wortes das wir abarbeiten<br>
+                        ke = keller[keller.length - 1]; - speichert das oberste Element auf den Keller<br>
+                        ke2 = keller[keller.length - 2] – speichert das zweiten Element auf den Keller<br>
+                        <br>
+                        Wenn f und ke nicht übereinstimmen, dann könnten wir pushen (Zeile 361)
+                        Dann gehen wir in die Liste „stepss“ mit den Entstehungsschritten der Grammatik und wenden diese
+                        an. Sollten wir danach poppen können, so wird dieses getan, sonst wird Chronologisch der zweite
+                        Entstehungsschritt angewendet etc.
+                        Die Chronologische Reihenfolge ergibt sich in „checkWord“ indem wir dort durch die Grammatik
+                        wissen wo im Index das die Regel angewendet wurde. <br>
+                        <br>
+                        wenn f und ke übereinstimmen, dann könnte man beide Popen. (Zeile 331)
+                        Jedoch nur, wenn einige Konditionen zutreffen:
+                        Wenn wir im abzuarbeitenden Wort noch mehrere Zs haben aber im Keller nur noch ein steht, dann
+                        NICHT poppen, sondern ersetzen. Oder, wenn f2 nicht gleich ke2 ist. Dies gilt für den Fall, dass
+                        ein Z ganz oben steht.
+                        Wenn eine „(“ oben steht, dann müssen wir es poppen, da wir hier nichts ersetzten können.
+                        Jedes mal wird wieder geprüft ob keller.length === 1 und das wort die länge 0 hat, um zu sehen
+                        ob nun das $ gepoppt werden kann und die Prüfung erfolgreich verlaufen ist.
+                    </p>
+                    <br>
+                    <br>
+                    <h4>Funktion für falsche Ausdrücke: test();</h4>
+                    <p>
+                        Diese Funktion ist sehr ähnlich der Funktion für dir richtigen Ausdrücke.
+                        Erster Unterschied. Es existiert eine Abbruchsbedingung für fehlerhafte Ausdrücke(00, ZZ, )(, A(
+                        etc.). Diese Sind in einer Liste gespeichert. Diese Ausdrücke besitzen 2 Zeichen und diese
+                        werden mit den ersten zwei Buchstaben des abzuarbeitenden Wortes verglichen. Stimmen sie
+                        überein, setzten wir con nicht auf true.<br>
+                        Zweiter Unterschied. Wenn wir was pushen wollen, so ist dieses Random zwischen ZOZ oder (Z),
+                        sollten wir beim poppen später auf ein Fehler stoßen, so gehen wir zurück zum ersten push und
+                        versuchen es mit dem anderen Ausdruck der Grammatik.<br>
+                        <br>
+
+                        Wie merkt sich die Funktion den Ort an denen sie schon mal einen Ausdruck gepushed hatte um dort
+                        bei bedarf zurückzukommen. (Zeile 483)
+                        Durch eine Liste, die bevor gepushed wird speichert: Wie sah das Wort im Keller aus vor dem
+                        Push?, wie sieht es nach dem Push aus?, Was habe ich gepushed? Und die anzahl der an diesem Ort
+                        durchgeführten pushs. Zu beginn ist die Anzahl 0 und wird zu 1 gesetzt. Sollte wir zum Step
+                        zurück und dort nochmal pushen, wird sie auf 2 gesetzt, was verhindert, dass man dort zum
+                        Dritten mal pushen, da dies größer als zwei zum Abbruch der Funktion führt.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="tm_aufgabe"></div>
+
+        <div class="tm_Container">
+            <h2>TM - Turning Maschine</h2>
+
+            <div class="tm_textcontainer">
+                <div class="tm_left">
+                    <h3>Was ist eine Turning Maschine</h3>
+                    <p>Ein 7-Tupel T = (Q,Σ, Γ, δ, q0, qaccept, qreject) heißt Turingmaschine (TM), wobei:<br>
+                        • Q ist eine nicht-leere, endliche Zustandsmenge.<br>
+                        • Σ ist das Eingabealphabet, das nicht das Blank enthält <br>
+                        • Γ ist das Bandalphabet mit Σ ⊆ Γ und Blank enthalten in Γ.<br>
+                        • δ : Q × Γ → Q × Γ × {L,R}<br>
+                        • q0 ∈ Q ist der Startzustand.<br>
+                        • qaccept ∈ Q ist der akzeptierende Zustand.<br>
+                        • qreject ∈ Q ist der verwerfende Zustand, mit qaccept = qreject.
+                    </p>
+                    <h3>Aufgabenstellung</h3>
+                    <p>
+                        Simulieren einer Turing Maschine (TM) die die Embedded Reber Grammar (ERG) entscheidet.
+                    </p>
+                </div>
+
+                <div class="tm_center">
+                    <h3>Technische Umsetzung</h3>
+                    <p>
+                        Das Layout der Turingmaschienen-Seite ist mit CSS und HTML5 entwickelt worden.<br>
+                        Die Einzelnen Eelemente wurden mit der Felxbox arrangiert.
+                        Die Funktionalitäten der Buttons, des Eingabefeld und der Überführungsregeln wurden mit
+                        js erzeugt.
+                    </p>
+                </div>
+
+                <div class="tm_right">
+                    <h3>Fachliche Umsetzung</h3>
+                    <p>
+                        Die Programmierung des Automaten ist stark an der Programmierung des des DEA angelehnt. Die Funktionen "generateRandomRightWord", "generateRandomWrongExpr", "isExpCorrect"
+                        "getNextPossible", "isLetterCorrect" und die Funktion für das Einfärben sind gleich geblieben.
+                        Ein Unterschied besteht darin, dass die Tabelle diesmal nicht in Js erstellt worden ist, sonder Js die in der HTML erstellen Tabelle anspricht in der Funktion "initProgram()". 
+                        Diese Funktiom initilalisiert eine Liste mit den Knoten und Kanten der Gramma.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

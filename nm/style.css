@@ -22,8 +22,8 @@ body {
     display: flex;
     justify-content: space-between;
     transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
 }
-
 
 aside {
     position: relative;
@@ -36,12 +36,14 @@ aside {
     flex-wrap: wrap;
     gap: 40px;
     padding-right: 2%;
-    font-size: 1.5rem;
     text-align: right;
-    /*text-shadow: 1px 1px #000;*/
-    /*box-shadow: #637373 1px -1px 2px;*/
-    color: #679b9b;
     z-index: 3;
+}
+
+.aside-container {
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .aside-down {
@@ -68,7 +70,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /*background-color: #637373;*/
     font-size: 1rem;
     cursor: pointer;
     border-top: 1px solid #637373;
@@ -82,15 +83,14 @@ aside {
     display: block;
     padding: 10px;
     /*margin-bottom: 10px;*/
-    background-color: #fff; /* Background color */
-    color: #637373; /* Text color */
-    /*border-radius: 5px;*/
+    background-color: #fff;
+    color: #637373;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .aside-btn a:hover {
-    background-color: #637373; /* Hover background color */
-    color: #fff; /* Hover text color */
+    background-color: #637373;
+    color: #ff9a76;
 }
 
 .min-img {
@@ -100,7 +100,7 @@ aside {
     width: 40%;
     min-width: 170px;
     border-radius: 5%;
-    box-shadow: -20px -20px 0 #679b9b;
+    box-shadow: -20px -20px 0 #637373;
     margin-right: 20px;
 }
 
@@ -117,14 +117,30 @@ a {
 }
 
 .en-de {
-    width: 35px;
+    display: block;
     margin-left: 10px;
+    width: 40px;
+    height: 30px;
+    background-color: #637373;
+    border: 1px solid #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 3px;
+}
+
+.en-de > a {
+    color: #fff;
+}
+
+.en-de:hover {
+    background-color: #ff9a76;
 }
 
 h1 {
-    margin: 20px 0;
+    margin: 10px 0;
     font-weight: normal;
     font-size: 2.5rem;
+    color: #679b9b;
 }
 
 .profile-img {
@@ -136,13 +152,17 @@ h1 {
     margin-right: 20px;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
 .nav {
     height: 70px;
     width: 100%;
-    background-color: #679b9b;
+    background-color: #637373;
     position: relative;
-    /*margin: 1% 1% 1% 0;*/
 }
 
 .nav > .nav-header {
@@ -177,7 +197,7 @@ h1 {
 }
 
 .nav > .nav-links > a:hover {
-    color: rgba(0, 0, 0, 0.3);
+    color:#ff9a76;
 }
 
 .nav > #nav-check {
@@ -188,10 +208,71 @@ h1 {
 
 main {
     width: 70vw;
-    color: #637373;
 }
 
 header {
-    /*background-color: #11d70a;*/
-    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+}
+
+.header-container {
+    background-image: url('img/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: black;
+    height: 90%;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.h-text {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+h2 {
+    font-weight: normal;
+    padding: 0 15px;
+}
+
+.experience, .projekte {
+    height: 49vh;
+}
+
+
+.experience h2 {
+    display: flex;
+}
+
+.exp-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #637373;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.experience-h {
+    color: #fff;
 }
