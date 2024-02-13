@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Satisfy&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------Body-------------------*/
+
+body {
+    padding: 0;
+    background-image: url("/MedienDesign/css/pic/coronatagebuch/fertigeSeite/bodypic1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;  
+    background-attachment: fixed;
+    font-family: 'Cormorant Garamond', serif,'Satisfy', cursive;
+  }
+
+
+/*--rgb(0, 155, 155)------------------header-------------------*/
+
+header {
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.741);
+  color: white;
+}
+
+.hero .righthero img {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.lefthero h1{
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+.lefthero p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+
+/*--------------------navi-------------------*/
+
+.overvew{
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));;
+}
+
+.overvew ul {
+  list-style: none;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.633);
+}
+
+
+.teil1 .a {
+  margin: 10px 0px;
+}
+.teil1 .a li{
+  margin: 30px 0px;
+  height: 50px;
+}
+
+.teil2 .b {
+  margin: 60px 0;
+}
+.teil2 .b li{
+  margin: 30px 0px;
+  height: 50px;
+}
+
+.teil3 .c {
+  margin: 60px 0;
+}
+.teil3 .c li{
+  margin: 30px 0px;
+  height: 50px;
+}
+
+.kopf{
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  color: rgba(50, 50, 50, 0.979);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.overvew div ul li a{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(50, 50, 50);
+  padding: 10px;
+  transition: background-color 0.8s;
+}
+
+.overvew div ul li a:hover{
+  background-color: rgba(50, 50, 50, 0.605);
+  color: rgba(255, 255, 255, 0.891);
+  border-radius: 4px;
+}
+
