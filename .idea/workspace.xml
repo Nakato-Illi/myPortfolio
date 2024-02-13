@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 2" />
+    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 2">
+      <change beforePath="$PROJECT_DIR$/nm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nm/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +87,7 @@
       <workItem from="1707737987182" duration="31000" />
       <workItem from="1707842908712" duration="1532000" />
       <workItem from="1707845655439" duration="91000" />
+      <workItem from="1707845779749" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="index file">
       <created>1707666499010</created>
@@ -114,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707845725232</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="projects part 2">
+      <created>1707845810416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707845810416</updated>
+    </task>
+    <task id="LOCAL-00006" summary="projects part 2">
+      <created>1707845855845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707845855845</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
