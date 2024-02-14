@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 3" />
+    <list default="true" id="04cb6bff-4a3c-4f94-9eb6-1969972fb1f2" name="Changes" comment="projects part 4">
+      <change beforePath="$PROJECT_DIR$/python_runner" beforeDir="false" afterPath="$PROJECT_DIR$/python_runner" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,21 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/illi-/OneDrive/Desktop/Portfolio&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/illi-/OneDrive/Desktop/Portfolio",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\illi-\OneDrive\Desktop\Portfolio\nm\img" />
@@ -87,6 +90,7 @@
       <workItem from="1707845655439" duration="91000" />
       <workItem from="1707845779749" duration="980000" />
       <workItem from="1707846843411" duration="79000" />
+      <workItem from="1707928936295" duration="206000" />
     </task>
     <task id="LOCAL-00001" summary="index file">
       <created>1707666499010</created>
@@ -158,18 +162,34 @@
       <option name="project" value="LOCAL" />
       <updated>1707846870836</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="projects part 4">
+      <created>1707928973089</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707928973089</updated>
+    </task>
+    <task id="LOCAL-00012" summary="projects part 4">
+      <created>1707929059725</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707929059725</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="index file" />
     <MESSAGE value="header" />
     <MESSAGE value="projects part 1" />
     <MESSAGE value="projects part 2" />
     <MESSAGE value="projects part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="projects part 3" />
+    <MESSAGE value="projects part 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="projects part 4" />
   </component>
 </project>
