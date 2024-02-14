@@ -11,18 +11,10 @@
 }
 
 body {
-    /*badge*/
-    /*background-color: #c05203;*/
-    /*blue*/
-    /*background-color: #679b9b;*/
-    /*!*gray*!*/
-    /*background-color: #637373;*/
-    /*!*orange*!*/
-    /*background-color: #ff9a76;*/
     display: flex;
     justify-content: space-between;
-    transition: all 0.5s ease-in-out;
     font-size: 1.5rem;
+    /*background-color: #f0f0f0; !* Light gray background color *!*/
 }
 
 aside {
@@ -85,7 +77,6 @@ aside {
     /*margin-bottom: 10px;*/
     background-color: #fff;
     color: #637373;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .aside-btn a:hover {
@@ -115,7 +106,6 @@ li {
 a {
     text-decoration: none;
 }
-
 .en-de {
     display: block;
     margin-left: 10px;
@@ -222,6 +212,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 50vh;
     display: flex;
@@ -256,12 +248,16 @@ h2 {
 }
 
 .experience, .projekte {
-    height: 49vh;
+    margin-bottom: 20%;
 }
 
 
 .experience h2 {
     display: flex;
+}
+
+.projekte h2{
+    background-color: #fff;
 }
 
 .exp-text {
@@ -271,8 +267,215 @@ h2 {
     background-color: #637373;
     margin: 0 auto;
     line-height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .experience-h {
+    color: #fff;
+}
+
+.zum-projekt-link {
+    background-color: #ff9a76;
+    padding: 0.6%;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.zum-projekt-link:hover {
+    color: #000;
+}
+
+.projekte {
+
+}
+
+.projekt-cat {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projekt-cat h3 {
+    color: #679b9b;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.tecInfo {
+}
+
+.tecInfo,
+.web-programmierung,
+.computergrafik {
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.tecInfo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tecInfo-header {
+    display: flex;
+    gap: 1%;
+    /*justify-content: space-between;*/
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    border-top: #ff9a76 1px solid;
+}
+
+.tecInfo-header h4 {
+    margin: 0;
+}
+
+.tecInfo-header h4 a
+{
+    color: #000;
+}
+
+.tecInfo-header h4 a:hover
+{
+    color: #ff9a76;
+}
+
+.tecInfo-header small {
+    color: #777;
+}
+
+.tecInfo-links,
+.cg-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 20px 0;
+}
+
+.tecInfo-links a ,
+.cg-links a{
+    color: #679b9b;
+    text-decoration: none;
+    margin-bottom: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.tecInfo-links a:hover{
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    background-image: url("img/bg3.png");
+}
+
+.cg-links a:hover {
+    color: #000;
+    text-shadow: 1px 1px #fff;
+}
+
+.web-programmierung p,
+.computergrafik p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.web-programmierung a,
+.computergrafik a {
+    color: #679b9b;
+    text-decoration: none;
+}
+
+.web-programmierung a:hover,
+.computergrafik a:hover {
+    color: #ff9a76;
+}
+
+.cg-a1:hover {
+    background-image: url("img/w1.png");
+    background-size: cover;
+}
+
+.cg-a2:hover {
+    background-image: url("img/ufo.png");
+    background-size: cover;
+}
+
+.cg-a3:hover {
+    background-image: url("img/w2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cg-a4:hover {
+    background-image: url("img/schatten.png");
+    background-size: cover;
+}
+
+.cg-a5:hover {
+    background-image: url("img/w3.png");
+    background-size: cover;
+}
+
+.cg-a6:hover {
+    background-image: url("img/w4.png");
+    background-size: cover;
+}
+
+.cg-a7:hover {
+    background-image: url("img/w5.png");
+    background-size: cover;
+}
+
+.cg-a8:hover {
+    background-image: url("img/kugel.png");
+    background-size: cover;
+}
+
+.cg-a9:hover {
+    background-image: url("img/kugel1.png");
+    background-size: cover;
+}
+
+.cg-a10:hover {
+    background-image: url("img/w6.png");
+    background-size: cover;
+}
+
+.cg-a11:hover {
+    background-image: url("img/tower.png");
+    background-size: cover;
+}
+
+.cg-a12:hover {
+    background-image: url("img/kugel2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cg-a13:hover {
+    background-image: url("img/kugel3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.md-img img{
+    width: 70%;
+    margin: 3% 0;
+}
+
+.sc-lang {
     color: #fff;
 }
