@@ -79,10 +79,6 @@
         color: #fff;
         text-shadow: 1px 1px #000;
     }
-
-    .web-image img {
-        width: 100%;
-    }
 }
 
 @media (max-width:670px) {
@@ -131,15 +127,6 @@
 
     .md-img img{
         width: 100%;
-    }
-
-    .mail-section {
-        background-size: 100vh;
-    }
-
-    .contact-left-title h2{
-        color: #fff;
-        text-shadow: 1px 1px #000;
     }
 
     .contact-inputs {
