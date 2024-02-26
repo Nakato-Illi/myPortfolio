@@ -14,7 +14,6 @@
     <a href="img/me1.jpg"><img class="profile-img" src="img/me2.jpg" alt="profile image"></a>
     <h1>Nakato Musisi</h1>
     <p><span class="small-text">Angehende </span> <br> Software Programmiererin</p>
-    <!--    <p><span class="small-text">Abschlusssemester </span> <br> Berliner Hochschule für Technik</p>-->
     <div class="aside-btn">
         <div>
             <a>Lebenslauf</a>
@@ -43,7 +42,7 @@
                 <a href="#">Home</a>
                 <a href="#exp">Erfahrungen</a>
                 <a href="#pro">Projekte</a>
-                <a href="#">Kontakt</a>
+                <a href="#con">Kontakt</a>
                 <span class="en-de"><a href="img/me1.jpg">EN</a></span>
             </div>
         </div>
@@ -72,7 +71,7 @@
                 <h2>Über Mich</h2>
                 <div class="h-text">
                     <p>
-                        Studentin im Abschlusssemester der Medieninformatik an der Berliner Hochschule für Technik (BHT)
+                        Ich bin Studentin im Abschlusssemester der Medieninformatik an der Berliner Hochschule für Technik (BHT)
                         mit dem Ziel, das im Studium erworbene Wissen in der Softwareprogrammierung im Bereich der
                         Frontend- und Backendentwicklung anzuwenden und zu erweitern.
                     </p>
@@ -84,8 +83,8 @@
     <section class="experience">
         <h2>Grundkenntnisse in:</h2>
         <div class="exp-text">
-            <div>
-                <p class="experience-h">JavaScript</p>
+            <div class="exp-list-box">
+                <p class="experience-h"><a href="#js">JavaScript</a></p>
                 <ul>
                     <li>NodeJS</li>
                     <li>Phaser</li>
@@ -93,26 +92,21 @@
                     <li>JQuery</li>
                 </ul>
             </div>
-            <div>
-                <p class="experience-h">Java</p>
-                <ul>
-                    <li>JavaFX</li>
-                </ul>
-            </div>
-            <div>
-                <p class="experience-h">PHP</p>
-                <ul>
-                    <li>Laravel</li>
-                </ul>
-            </div>
-            <div>
-                <p class="experience-h">Python</p>
+            <div class="exp-list-box">
+                <p class="experience-h"><a href="#py">Python</a></p>
                 <ul>
                     <li>PyGame</li>
                     <li>Django</li>
                 </ul>
             </div>
-            <div class="sc-lang">
+            <div class="exp-list-box">
+                <p class="experience-h"><a href="#php">PHP</a></p>
+                <ul>
+                    <li>Laravel</li>
+                </ul>
+            </div>
+            <div class="sc-lang exp-list-box">
+                <p>Java(FX)</p>
                 <p>HTML 5</p>
                 <p>CSS</p>
                 <p>Canvas</p>
@@ -123,45 +117,65 @@
     <section class="projekte">
         <h2>Projekte</h2>
         <div class="projekt-cat">
+            <div id="js"></div>
             <h3>JS</h3>
             <div class="tecInfo">
                 <div class="tecInfo-text">
                     <div class="tecInfo-header">
-                        <h4><a href="https://nakato-illi.github.io/myPortfolio/TechInfo/index.html">Technische Informatik</a></h4> <small> 2021 </small>
+                        <h4><a href="https://nakato-illi.github.io/myPortfolio/TechInfo/index.html">Technische
+                            Informatik</a></h4> <small> 2021 </small>
                     </div>
                     <p>Vier online Anwendungen der technischen Informatik
-                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/myPortfolio/TechInfo/index.html">Projekt</a>
-                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/myPortfolio/tree/main/TechInfo">Code</a>
+                        <a class="zum-projekt-link"
+                           href="https://nakato-illi.github.io/myPortfolio/TechInfo/index.html">Projekt</a>
+                        <a class="zum-projekt-link"
+                           href="https://github.com/Nakato-Illi/myPortfolio/tree/main/TechInfo">Code</a>
                     </p>
                 </div>
                 <div class="tecInfo-links">
-                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/Dea-Simulator.html">DEA - deterministisch endlicher Automat</a>
-                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/Grammatik.html">kontextfreie Grammatik</a>
+                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/Dea-Simulator.html">DEA -
+                        deterministisch endlicher Automat</a>
+                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/Grammatik.html">kontextfreie
+                        Grammatik</a>
                     <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/KellerA.html">Kellerautomat</a>
-                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/TM-Simulator.html">TM - Turning Maschine</a>
+                    <a href="https://nakato-illi.github.io/myPortfolio/TechInfo/TM-Simulator.html">TM - Turning
+                        Maschine</a>
                 </div>
             </div>
 
             <div class="tecInfo">
                 <div class="tecInfo-text">
                     <div class="tecInfo-header">
-                        <h4><a href="https://nakato-illi.github.io/myPortfolio/10Abschlussprojekt/inedx.html">Web Programmierung</a></h4> <small> 2021 </small>
+                        <h4><a href="https://nakato-illi.github.io/myPortfolio/10Abschlussprojekt/inedx.html">Web
+                            Programmierung</a></h4> <small> 2021 </small>
                     </div>
                     <p>Erster Versuch der Erstellung einer responsive Web-Applikation
-                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/myPortfolio/10Abschlussprojekt/inedx.html" target="_blank">Projekt</a>
-                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/myPortfolio/tree/main/10Abschlussprojekt" target="_blank">Code</a>
+                        <a class="zum-projekt-link"
+                           href="https://nakato-illi.github.io/myPortfolio/10Abschlussprojekt/inedx.html"
+                           target="_blank">Projekt</a>
+                        <a class="zum-projekt-link"
+                           href="https://github.com/Nakato-Illi/myPortfolio/tree/main/10Abschlussprojekt"
+                           target="_blank">Code</a>
                     </p>
+                </div>
+                <div class="web-image">
+                    <img src="img/resp1.png">
+                    <img src="img/resp2.png">
                 </div>
             </div>
 
             <div class="tecInfo">
                 <div class="tecInfo-text">
                     <div class="tecInfo-header">
-                        <h4><a href="https://nakato-illi.github.io/rmaGame/index.html">Phasergame</a></h4> <small> 2024 </small>
+                        <h4><a href="https://nakato-illi.github.io/rmaGame/index.html">Phasergame</a></h4> <small>
+                        2024 </small>
                     </div>
                     <p>NakaGame
-                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/rmaGame/index.html" target="_blank">Projekt</a>
-                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/nakato-illi.github.io/tree/master/rmaGame" target="_blank">Code</a>
+                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/rmaGame/index.html"
+                           target="_blank">Projekt</a>
+                        <a class="zum-projekt-link"
+                           href="https://github.com/Nakato-Illi/nakato-illi.github.io/tree/master/rmaGame"
+                           target="_blank">Code</a>
                     </p>
                 </div>
                 <div class="md-img">
@@ -172,27 +186,43 @@
             <div class="tecInfo">
                 <div class="tecInfo-text">
                     <div class="tecInfo-header">
-                        <h4><a href="https://nakato-illi.github.io/myPortfolio/cg/index.html">Computergrafik</a></h4> <small> 2022 </small>
+                        <h4><a href="https://nakato-illi.github.io/myPortfolio/cg/index.html">Computergrafik</a></h4>
+                        <small> 2022 </small>
                     </div>
                     <p>Modellierungsaufgabensammlung
-                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/myPortfolio/cg/index.html" target="_blank">Projekt</a>
-                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/myPortfolio/tree/main/cg" target="_blank">Code</a>
+                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/myPortfolio/cg/index.html"
+                           target="_blank">Projekt</a>
+                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/myPortfolio/tree/main/cg"
+                           target="_blank">Code</a>
                     </p>
                 </div>
                 <div class="cg-links">
-                    <a class="cg-a1" href="https://nakato-illi.github.io/myPortfolio/cg/index.html" target="_blank">Polycount als Würfel</a>
-                    <a class="cg-a2" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_2/index.html" target="_blank">eigenes 3D-Modell - Raumschiff</a>
-                    <a class="cg-a3" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_3/index.html" target="_blank">Rasterung durch Bresenham - Würfel</a>
-                    <a class="cg-a4" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_4/index.html" target="_blank">Scanline - Polygone füllen</a>
-                    <a class="cg-a5" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_5/index.html" target="_blank">Verdeckung durch Z-Buffer</a>
-                    <a class="cg-a6" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_6/index.html" target="_blank">3D-Scherung eines Modells</a>
-                    <a class="cg-a7" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m1/index.html" target="_blank">Vertex-Normals</a>
-                    <a class="cg-a8" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m2/index.html" target="_blank">Prozedurale Generierung einer Kugel </a>
-                    <a class="cg-a9" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m3/index.html" target="_blank">Back-Face Culling</a>
-                    <a class="cg-a10" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m4/index.html" target="_blank">Clean-Data</a>
-                    <a class="cg-a11" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m5/index.html" target="_blank">Modellimporter und Blender Modell</a>
-                    <a class="cg-a12" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_s1/index.html" target="_blank">Scenegraph</a>
-                    <a class="cg-a13" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_s2/index.html" target="_blank"> Rotating-Planet-Animation</a>
+                    <a class="cg-a1" href="https://nakato-illi.github.io/myPortfolio/cg/index.html" target="_blank">Polycount
+                        als Würfel</a>
+                    <a class="cg-a2" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_2/index.html"
+                       target="_blank">eigenes 3D-Modell - Raumschiff</a>
+                    <a class="cg-a3" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_3/index.html"
+                       target="_blank">Rasterung durch Bresenham - Würfel</a>
+                    <a class="cg-a4" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_4/index.html"
+                       target="_blank">Scanline - Polygone füllen</a>
+                    <a class="cg-a5" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_5/index.html"
+                       target="_blank">Verdeckung durch Z-Buffer</a>
+                    <a class="cg-a6" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_6/index.html"
+                       target="_blank">3D-Scherung eines Modells</a>
+                    <a class="cg-a7" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m1/index.html"
+                       target="_blank">Vertex-Normals</a>
+                    <a class="cg-a8" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m2/index.html"
+                       target="_blank">Prozedurale Generierung einer Kugel </a>
+                    <a class="cg-a9" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m3/index.html"
+                       target="_blank">Back-Face Culling</a>
+                    <a class="cg-a10" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m4/index.html"
+                       target="_blank">Clean-Data</a>
+                    <a class="cg-a11" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_m5/index.html"
+                       target="_blank">Modellimporter und Blender Modell</a>
+                    <a class="cg-a12" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_s1/index.html"
+                       target="_blank">Scenegraph</a>
+                    <a class="cg-a13" href="https://nakato-illi.github.io/myPortfolio/cg/aufgabe_s2/index.html"
+                       target="_blank"> Rotating-Planet-Animation</a>
                 </div>
             </div>
 
@@ -200,11 +230,15 @@
             <div class="tecInfo">
                 <div class="tecInfo-text">
                     <div class="tecInfo-header">
-                        <h4><a href="https://nakato-illi.github.io/MedienDesign/html/tagebuch.html">Mediendesign</a></h4> <small> 2022 </small>
+                        <h4><a href="https://nakato-illi.github.io/MedienDesign/html/tagebuch.html">Mediendesign</a>
+                        </h4> <small> 2022 </small>
                     </div>
                     <p>Die Kamera dein bester Freund
-                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/MedienDesign/html/tagebuch.html" target="_blank">Projekt</a>
-                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/myPortfolio/tree/main/MedienDesign" target="_blank">Code</a>
+                        <a class="zum-projekt-link" href="https://nakato-illi.github.io/MedienDesign/html/tagebuch.html"
+                           target="_blank">Projekt</a>
+                        <a class="zum-projekt-link"
+                           href="https://github.com/Nakato-Illi/myPortfolio/tree/main/MedienDesign"
+                           target="_blank">Code</a>
                     </p>
                 </div>
                 <div class="md-img">
@@ -213,15 +247,49 @@
             </div>
         </div>
         <div class="projekt-cat">
-            <h3>Java</h3>
-        </div>
-        <div class="projekt-cat">
-            <h3>PHP</h3>
-        </div>
-        <div class="projekt-cat">
+            <div id="py"></div>
             <h3>Python</h3>
+            <div class="tecInfo">
+                <div class="tecInfo-text">
+                    <div class="tecInfo-header">
+                        <h4>
+                            <a href="https://nakato-illi.github.io/myPortfolio/python_runner_deploy/index.html">Pygame</a>
+                        </h4> <small> 2023 </small>
+                    </div>
+                    <p>Deployed mit pygbag über github (läd etwas langsam). Score 18 ist bisher das Max ;)
+                        <a class="zum-projekt-link"
+                           href="https://nakato-illi.github.io/myPortfolio/python_runner_deploy/index.html"
+                           target="_blank">Projekt</a>
+                        <a class="zum-projekt-link" href="https://github.com/Nakato-Illi/oosp_esa2"
+                           target="_blank">Code</a>
+                    </p>
+                </div>
+                <div class="md-img">
+                    <img src="img/pyrunner.png">
+                </div>
+            </div>
         </div>
     </section>
+
+    <div id="con"></div>
+    <section class="mail-section">
+        <div class="contact-left-title">
+            <h2>Schick mir eine Nachricht</h2>
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" id="contactForm" onsubmit="clearForm()">
+                    <input type="hidden" name="access_key" value="2f9c049c-f147-4a62-b579-2a187c32f67f">
+                    <input type="text" name="name" id="nameInput" placeholder="dein Name" class="contact-inputs" required>
+                    <input type="email" name="email" id="emailInput" placeholder="deine e-mail" class="contact-inputs" required>
+                    <textarea name="message" id="messageInput" class="contact-inputs" placeholder="deine Nachricht" required></textarea>
+                    <button type="submit">Abschicken</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <p>&copy; 2024 Nakato Musisi. Alle Rechte vorbehalten.</p>
+    </div>
 </main>
+<script src="main.js"></script>
 </body>
 </html>
