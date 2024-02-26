@@ -134,4 +134,8 @@
         width: 80vw;
         height: 50px;
     }
+
+    #footer {
+        font-size: 1.2rem;
+    }
 }

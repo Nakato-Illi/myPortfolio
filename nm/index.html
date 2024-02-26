@@ -8,6 +8,17 @@
     <title>Nakato Musisi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaq.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Pds41NeGSBvH3rC2y",
+            });
+        })();
+    </script>
+
 </head>
 <body>
 <aside class="aside-container">
@@ -50,7 +61,7 @@
             <p><span class="small-text">Angehende </span> <br> Software Programmiererin</p>
             <div class="aside-btn">
                 <div>
-                    <a href="assets/Lebenslauf_02-2024.pdf" >Lebenslauf</a>
+                    <a href="assets/Lebenslauf_02-2024.pdf">Lebenslauf</a>
                 </div>
             </div>
         </div>
@@ -62,7 +73,8 @@
                 <h2>Über Mich</h2>
                 <div class="h-text">
                     <p>
-                        Ich bin Studentin im Abschlusssemester der Medieninformatik an der Berliner Hochschule für Technik (BHT)
+                        Ich bin Studentin im Abschlusssemester der Medieninformatik an der Berliner Hochschule für
+                        Technik (BHT)
                         mit dem Ziel, das im Studium erworbene Wissen in der Softwareprogrammierung im Bereich der
                         Frontend- und Backendentwicklung anzuwenden und zu erweitern.
                     </p>
@@ -87,20 +99,19 @@
                 <p class="experience-h"><a href="#py">Python</a></p>
                 <ul>
                     <li>PyGame</li>
-                    <li>Django</li>
-                </ul>
-            </div>
-            <div class="exp-list-box">
-                <p class="experience-h"><a href="#php">PHP</a></p>
-                <ul>
-                    <li>Laravel</li>
+                    <li><a href="https://github.com/Nakato-Illi/oospAbgabe2024">Django</a><span class="stern">*</span>
+                    </li>
                 </ul>
             </div>
             <div class="sc-lang exp-list-box">
-                <p>Java(FX)</p>
+                <p><a href="https://github.com/amani2409/PuF-ighters">Java(FX)</a><span class="stern">*</span></p>
+                <p><a href="https://github.com/Nakato-Illi/art-shop">PHP(Laravel)</a><span class="stern">*</span></p>
                 <p>HTML 5</p>
                 <p>CSS</p>
                 <p>Canvas</p>
+            </div>
+            <div class="zusatztext">
+                <p><span class="stern">*</span>kein Deployment aber Code auf Github erhältlich</p>
             </div>
         </div>
     </section>
@@ -267,12 +278,14 @@
         <div class="contact-left-title">
             <h2>Schick mir eine Nachricht</h2>
             <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" id="contactForm" onsubmit="clearForm()">
-                    <input type="hidden" name="access_key" value="2f9c049c-f147-4a62-b579-2a187c32f67f">
-                    <input type="text" name="name" id="nameInput" placeholder="dein Name" class="contact-inputs" required>
-                    <input type="email" name="email" id="emailInput" placeholder="deine e-mail" class="contact-inputs" required>
-                    <textarea name="message" id="messageInput" class="contact-inputs" placeholder="deine Nachricht" required></textarea>
-                    <button type="submit">Abschicken</button>
+                <form class="contact-left" id="contactForm">
+                    <input type="text" name="from_name" id="from_name" placeholder="dein Name" class="contact-inputs"
+                           required>
+                    <input type="email" name="from_email" id="from_email" placeholder="deine e-mail" class="contact-inputs"
+                           required>
+                    <textarea name="message" id="from_message" class="contact-inputs" placeholder="deine Nachricht"
+                              required></textarea>
+                    <button type="submit" onclick="sendMail()">Abschicken</button>
                 </form>
             </div>
         </div>
