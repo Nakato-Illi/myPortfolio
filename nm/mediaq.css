@@ -116,4 +116,30 @@
         padding-left: 29px;
         border-color: #679b9b;
     }
+
+    .md-img img{
+        width: 100%;
+    }
+
+    .mail-section {
+        background-size: 100vh;
+    }
+
+    .contact-left-title h2{
+        color: #fff;
+        text-shadow: 1px 1px #000;
+    }
+
+    .contact-inputs {
+        width: 80vw;
+        height: 50px;
+    }
+
+    .contact-left button {
+        padding: 15px 30px;
+        font-size: 16px;
+        background-color: #fff;
+        border: 1px solid rgba(99, 115, 115, 0);
+        color: #637373;
+    }
 }
