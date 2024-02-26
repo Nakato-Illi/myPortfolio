@@ -71,6 +71,15 @@
         right: 70px;
     }
 
+    .mail-section {
+        background-size: 100vh;
+    }
+
+    .contact-left-title h2{
+        color: #fff;
+        text-shadow: 1px 1px #000;
+    }
+
 }
 
 @media (max-width:670px) {
