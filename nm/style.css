@@ -75,9 +75,10 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
-    border-top: 1px solid #637373;
+    border: 1px solid #ff9a76;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .dl-icon {
@@ -496,17 +497,23 @@ h2 {
     margin: 3% 0;
 }
 
-.web-image {
+.web-image a{
     width: 100%;
-    display: flex;
 }
 
-.web-image img {
+.web-image a img {
     width: 40%;
+    /*height: 40%;*/
     margin-right: 2%;
     margin-top: 2%;
 }
 
+.web-image a img:first-child {
+    /*width: 40%;*/
+    height: 40%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
 .mail-section {
     background-image: url("img/bg3.png");
     background-repeat: no-repeat;
@@ -594,4 +601,14 @@ h2 {
 
 .zusatztext {
     font-size: 16px;
+}
+
+.end-text {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ff9a76;
+    color: #efefef;
 }
