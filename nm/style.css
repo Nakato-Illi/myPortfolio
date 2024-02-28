@@ -252,6 +252,7 @@ header {
     height: 90%;
     width: 70%;
     margin-left: 20px;
+    min-height: 0;
 }
 
 .h-text {
@@ -611,4 +612,17 @@ h2 {
     text-align: center;
     background-color: #ff9a76;
     color: #efefef;
+}
+
+.zusatz-exp-text {
+    display: flex;
+    background-color: rgba(99, 115, 115, 0.78);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.zusatz-exp {
+    display: flex;
+    gap: 30%;
+    padding-top: 3%;
 }
